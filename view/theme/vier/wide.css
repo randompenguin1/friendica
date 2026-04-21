@@ -8,12 +8,6 @@ right_aside {
   display: block;
 }
 
-aside #group-list-sidebar-frame,
-aside #group-list-sidebar,
-#group-list-sidebar-inflated {
-  display: none;
-}
-
 right_aside span.sbox {
   margin-left: 10px;
 }
