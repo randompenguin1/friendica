@@ -120,7 +120,7 @@ class PagesManager
 			$entries[] = $entry;
 		}
 
-		$tpl = Renderer::getMarkupTemplate('widget/page_list.tpl');
+		$tpl = Renderer::getMarkupTemplate('widget/pages_list.tpl');
 
 
 		$addonHelper = DI::addonHelper();
@@ -129,16 +129,16 @@ class PagesManager
 			$tpl,
 			[
 				'$title'                         => DI::l10n()->t('Pages'),
-				'$pages'                        => $entries,
+				'$pages'                         => $entries,
 				'$link_desc'                     => DI::l10n()->t('External link to page'),
-				'$new_page'                => 'register/?type=page',
+				'$new_page'                      => 'register/?type=page',
 				'$total'                         => $total,
-				'$visible_pages'                => $visiblePages,
+				'$visible_pages'                 => $visiblePages,
 				'$showless'                      => DI::l10n()->t('show less'),
 				'$showmore'                      => DI::l10n()->t('show more'),
-				'$create_new_page'              => DI::l10n()->t('Create new page'),
-				'$addon_page_directory_enabled' => $addonHelper->isAddonEnabled("pagedirectory"),
-				'$visit_pagedirectory'          => DI::l10n()->t('Find pages to join'),
+				'$create_new_page'               => DI::l10n()->t('Create new page'),
+				'$addon_page_directory_enabled'  => $addonHelper->isAddonEnabled("pagedirectory"),
+				'$visit_pagedirectory'           => DI::l10n()->t('Find pages to join'),
 			],
 		);
 	}
