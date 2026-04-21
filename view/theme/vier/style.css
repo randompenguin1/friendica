@@ -434,10 +434,12 @@ pre code {
 	border-radius: 10px;
 	display: none;
 }*/
-#sidebar-circle-list .notify {
+#sidebar-circle-list .notify,
+#sidebar-pages-list .notify {
 	display: none;
 }
-#sidebar-circle-list .notify.show {
+#sidebar-circle-list .notify.show,
+#sidebar-pages-list .notify.show {
 	display: inline-block;
 }
 .tool .label {
@@ -463,7 +465,7 @@ pre code {
 	opacity: 1;
 }
 
-.sidebar-circle-li:hover, #sidebar-new-circle:hover, #sidebar-edit-circles:hover, #sidebar-new-group:hover, #group-widget-collapse:hover,
+.sidebar-circle-li:hover, #sidebar-new-circle:hover, #sidebar-edit-circles:hover,
 #sidebar-uncircled:hover, .side-link:hover, .nets-ul li:hover, #group-list-sidebar li:hover, #group-list-sidebar-right li:hover,
 .nets-all:hover, .saved-search-li:hover, li.tool:hover, .admin.link:hover, aside h4 a:hover, right_aside h4 a:hover, #message-new:hover,
 #sidebar-photos-albums li:hover, .photos-upload-link:hover, .textcomplete-item.active {
@@ -484,7 +486,7 @@ pre code {
 	font-weight: bold;
 }
 
-#group-widget-showmore, #sidebar-new-circle, #sidebar-edit-circles, #sidebar-new-group, #group-widget-collapse, #group-list-rsidebar-right, #sidebar-uncircled,
+#group-widget-showmore, #sidebar-new-circle, #sidebar-edit-circles, #sidebar-uncircled,
 .side-link, #peoplefind-desc, #connect-desc, .nets-all, .admin.link, #message-new {
 	padding-left: 10px;
 	padding-top: 3px;
